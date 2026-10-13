@@ -31,3 +31,7 @@ not part of this repository.
 ## Warning
 
 For development machines only. Don't use it with passwords for production servers.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
