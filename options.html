@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Frappe Local Auto-Login</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; margin: 16px; min-width: 360px; }
+    label { display: block; margin: 12px 0 4px; font-weight: 600; }
+    input, textarea { width: 100%; box-sizing: border-box; padding: 6px; font: inherit; }
+    textarea { height: 80px; font-family: ui-monospace, monospace; }
+    p.hint { color: #666; margin: 4px 0 0; }
+    button { margin-top: 12px; padding: 6px 14px; }
+    #status { margin-left: 8px; color: #1a7f37; }
+  </style>
+</head>
+<body>
+  <label for="user">Username</label>
+  <input id="user" autocomplete="off">
+  <label for="passwords">Passwords, one per line</label>
+  <textarea id="passwords" autocomplete="off" spellcheck="false"></textarea>
+  <p class="hint">Tried in order until one works. Stored only in this browser.</p>
+  <button id="save">Save</button><span id="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>

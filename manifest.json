@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Frappe Local Auto-Login",
+  "version": "1.2.0",
+  "description": "Logs in as Administrator on local/LAN Frappe sites when you open /app or /desk.",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*"
+      ],
+      "include_globs": [
+        "*/app",
+        "*/app/*",
+        "*/app?*",
+        "*/login*",
+        "*/desk*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}
